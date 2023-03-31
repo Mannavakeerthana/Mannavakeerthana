@@ -1,25 +1,25 @@
-## GraphQL backend
+# Bloglist frontend
 
-Through the exercises, we will implement a GraphQL backend for a small library.
+In this exercise, we will now create a frontend for the bloglist backend we created in the last part.
+A login functionnality is also implemented for restricting the possibility to view and create blogs only by authenticated users. We assume that a user already exists with the good credentials.
 
+Since the objective of this part is to test the react app, unit tests and end-to-end (E2E) tests with cypress are also implemented.
 
-### Start the application locally
-First create a `.env` file with the following content:
-```
-MONGO_PWD=<YOUR-MONGO-PWD>
-JWT_SECRET=<YOUR-JWT-SECRET>
-PASSWORD=<YOUR-PASSWORD>          # All users have the same password, we focus here on GraphQL
-```
+## Start the application locally
 
 To start an application:
+
 ```bash
+# First, you need to start the backend, to do so, head to the part4. Everything is explained in the README
+
 # Install dependancies
 $ npm install
 
-# Start the application
-$ npm run dev
+# Start the frontend application
+$ npm start
+
+# For running E2E tests
+$ npm run cypress:open        # Then, click on run all specs
 ```
 
-You can then access the GraphQL-playground on: http://localhost:4000/. 
-
-This is a very useful tool for a developer, and can be used to make queries to the server.
+You can then access the app on : http://localhost:3000/
