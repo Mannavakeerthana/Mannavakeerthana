@@ -1,18 +1,9 @@
-const mongoose = require('mongoose')
-const uniqueValidator = require('mongoose-unique-validator')
+import axios from 'axios'
+const baseUrl = '/api/users'
 
-const schema = new mongoose.Schema({
-  username: {
-    type: String,
-    required: true,
-    unique: true,
-    minlength: 3
-  },
-  favoriteGenre: {
-    type: String,
-    required: true,
-  },
-})
+const getAll = async () => {
+  const response = await axios.get(baseUrl)
+  return response.data
+}
 
-schema.plugin(uniqueValidator)
-module.exports = mongoose.model('User', schema)
+export default { getAll }

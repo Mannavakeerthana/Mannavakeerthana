@@ -1,3 +1,21 @@
-# Solutions for part 3 exercises
+# Bloglist frontend
 
-In this part our focus shifts towards the backend, that is, towards implementing functionality on the server side of the stack. We will implement a simple REST API in Node.js by using the Express library, and the application's data will be stored in a MongoDB database. At the end of this part, we will deploy a `phonebook` application to the internet.
+In this exercise, we will refactor the Bloglist application that we worked on in parts four and five for it to use Redux for the application's state management. We also used `React Router` for conditional rendering of components based on the url in the browser, as well as `React Bootstrap` for styling our application.
+
+We assume that a user already exist in the database with the good credentials. If not, please head to part 4 for creating a new user using the API.
+
+## Start the application locally
+
+To start an application:
+
+```bash
+# First, you need to start the backend, to do so, head to the part4. Everything is explained in the README
+
+# Install dependancies
+$ npm install
+
+# Start the frontend application
+$ npm start
+```
+
+You can then access the app on : http://localhost:3000/
